@@ -1,17 +1,21 @@
-.header{
+.header {
   padding: 0 150px;
   background: #ffffff;
   height: 70px;
   position: relative;
+  box-sizing: border-box;
+  width: 100%;
 }
+
 .logo {
   float: left;
   width: 140px;
   height: 50px;
   position: absolute;
   left: 150px;
-  top:10px;
+  top: 10px;
 }
+
 .img-logo {
   width: 140px;
   height: 50px;
@@ -30,7 +34,6 @@
 
 .nav-links li {
   padding-left: 48px;
-  
   font-size: 17px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
@@ -44,4 +47,78 @@
 
 .navActive {
   color: #00B996;
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #000000;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle:focus {
+  outline: 0
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #00C58E;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 4px
+}
+
+/* 宽小于768，后续样式无效 */
+@media (min-width:768px) {
+  .navbar-toggle {
+    display: none
+  }
+}
+
+/* 宽大于768，后续样式无效 ；即宽小于768 以下样式生效*/
+@media (max-width:768px) {
+  .header {
+    padding: 0 20px;
+    
+  }
+
+  .logo {
+    left: 20px;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background: #ffffff;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgb(233 240 245 / 60%);
+  }
+
+  .nav-links {
+    display: block;
+  }
+
+  .navbar-toggle {
+    display: block
+  }
+
+  .nav-links li {
+    padding-left: 0;
+    line-height: 50px;
+  }
 }

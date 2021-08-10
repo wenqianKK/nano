@@ -62,3 +62,15 @@
 .img-map{
   width: 100%;
 }
+/* 宽大于768，后续样式无效 ；即宽小于768 以下样式生效*/
+@media (max-width:768px) {
+  .contain-left{
+    float: none;
+    width: 100%;
+    padding: 20px ;
+  }
+  .contain-Right{
+    float: none;
+    width: 100%;
+  }
+}

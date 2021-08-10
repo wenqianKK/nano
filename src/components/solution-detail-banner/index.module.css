@@ -44,11 +44,12 @@
   flex-direction: column;
 }
 
-.banner-left-ability-item img{
+.banner-left-ability-item img {
   width: 40px;
   height: 40px;
 }
-.banner-left-ability-item div{
+
+.banner-left-ability-item div {
   margin-top: 18px;
   height: 25px;
   font-size: 17px;
@@ -57,7 +58,10 @@
   color: #FFFFFF;
   line-height: 25px;
 }
-
+.banner-left {
+  margin-bottom: 60px;
+  width: auto;
+}
 .banner-right {
   width: 580px;
   height: 450px;
@@ -67,4 +71,26 @@
 .banner-right img {
   width: 580px;
   height: 450px;
+}
+
+
+/* 宽大于768，后续样式无效 ；即宽小于768 以下样式生效*/
+@media (max-width:768px) {
+  .banner-wrapper {
+    padding: 0 20px;
+  }
+
+  .banner-container {
+    flex-flow: column;
+  }
+
+  .banner-right {
+    margin-left: 0;
+    width: 348px;
+    height: 270px;
+  }
+  .banner-right img {
+    width: 348px;
+    height: 270px;
+  }
 }
