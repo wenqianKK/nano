@@ -1,0 +1,70 @@
+.banner-wrapper {
+  width: 100%;
+  padding: 0 150px;
+  background: #000000FF;
+  box-sizing: border-box;
+}
+
+.banner-container {
+  display: flex;
+}
+
+.banner-left {
+  margin-top: 85px;
+  width: 458px;
+  margin-bottom: 90px;
+}
+
+.banner-left-title {
+  height: 50px;
+  font-size: 45px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+.banner-left-desc {
+  font-size: 17px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 25px;
+}
+
+.banner-left-ability {
+  display: flex;
+  padding-top: 26px;
+}
+
+.banner-left-ability-item {
+  display: flex;
+  min-width: 132px;
+  flex-direction: column;
+}
+
+.banner-left-ability-item img{
+  width: 40px;
+  height: 40px;
+}
+.banner-left-ability-item div{
+  margin-top: 18px;
+  height: 25px;
+  font-size: 17px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 25px;
+}
+
+.banner-right {
+  width: 580px;
+  height: 450px;
+  margin-left: 22px;
+}
+
+.banner-right img {
+  width: 580px;
+  height: 450px;
+}
