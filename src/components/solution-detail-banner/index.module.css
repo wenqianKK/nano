@@ -42,6 +42,7 @@
   display: flex;
   min-width: 132px;
   flex-direction: column;
+  flex: 1;
 }
 
 .banner-left-ability-item img {
@@ -92,5 +93,9 @@
   .banner-right img {
     width: 348px;
     height: 270px;
+    margin-left: -20px;
+  }
+  .banner-left-ability-item {
+    min-width: auto;
   }
 }

@@ -1,5 +1,6 @@
 .tab-wrapper {
   padding: 0 150px;
+  overflow-y: auto;
 }
 
 .tab-container {
@@ -15,7 +16,6 @@
 
 .tab-item {
   display: flex;
-  height: 40px;
   align-items: center;
   color: #000000;
   padding: 0 20px 34px 24px;
@@ -34,4 +34,11 @@
   font-weight: 800;
   line-height: 20px;
   letter-spacing: 1px;
+  min-width: 60px;
+}
+@media (max-width:768px) {
+  .tab-wrapper {
+    padding: 0 20px;
+  }
+ 
 }
