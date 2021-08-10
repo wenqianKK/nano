@@ -1,0 +1,21 @@
+.descWrapper {
+  padding: 35px 150px 86px 150px;
+}
+
+.descTitle {
+  height: 50px;
+  font-size: 45px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #000000;
+  line-height: 50px;
+}
+.descContent{
+  margin-top: 25px;
+  font-size: 17px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 25px;
+  white-space: pre;
+}

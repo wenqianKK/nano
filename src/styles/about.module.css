@@ -1,0 +1,64 @@
+.contain-left {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 110px;
+}
+
+.contain-wapper {
+  margin: 0 auto;
+}
+
+.contain-title {
+  height: 50px;
+  font-size: 45px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #000000;
+  line-height: 50px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contain-desc {
+  height: 125px;
+  font-size: 17px;
+  font-family: Lato-Regular, Lato;
+  font-weight: 400;
+  color: #000000;
+  line-height: 25px;
+}
+
+.contain-server-t {
+  font-size: 20px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #000000;
+  line-height: 35px;
+}
+
+.contain-server-n {
+  font-size: 25px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #000000;
+  line-height: 35px;
+}
+
+.contain-email {
+  height: 35px;
+  font-size: 20px;
+  font-family: Lato-Regular, Lato;
+  font-weight: 400;
+  color: #000000;
+  line-height: 35px;
+}
+
+.contain-Right {
+  float: right;
+  width: 50%;
+}
+
+.img-map{
+  width: 100%;
+}

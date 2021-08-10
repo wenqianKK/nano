@@ -30,7 +30,7 @@ const Header = ({ pageTitle, children }) => {
         <ul className={navLinks}>
           <li><Link to="/" activeClassName={navActive}>首页</Link></li>
           <li><Link to="/solution" activeClassName={navActive}>解决方案</Link></li>
-          <li><Link  activeClassName={navActive}>产品方案</Link></li>
+          <li><Link to="/product"activeClassName={navActive}>产品方案</Link></li>
           <li><Link to="/about" activeClassName={navActive}>联系我们</Link></li>
         </ul>
       </nav>

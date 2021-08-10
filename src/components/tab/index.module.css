@@ -1,0 +1,37 @@
+.tab-wrapper {
+  padding: 0 150px;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.border-bottom{
+  height: 1px;
+  background: #D3DCE5;
+  margin-top: -2px;
+}
+
+.tab-item {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  color: #000000;
+  padding: 0 20px 34px 24px;
+  cursor: pointer;
+}
+
+.tab-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.tab-content {
+  font-size: 13px;
+  font-family: Lato-Heavy, Lato;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
