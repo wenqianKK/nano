@@ -10,6 +10,10 @@ import financeAbility2 from "../images/financeAbility2.png";
 import fpgaAbility0 from "../images/fpgaAbility0.png";
 import fpgaAbility1 from "../images/fpgaAbility1.png";
 import tabf1 from "../images/tabf1.png";
+import tabf2 from "../images/tabf2.png";
+import tabf3 from "../images/tabf3.png";
+import tabf4 from "../images/tabf4.png";
+import tabf5 from "../images/tabf5.png";
 import tabfAct1 from "../images/tabfAct1.png";
 import tabfAct2 from "../images/tabfAct2.png";
 import tabfAct3 from "../images/tabfAct3.png";
@@ -58,22 +62,22 @@ export const solutionData = [{
       label: "交易柜台",
       value: "dealDesks"
     }, {
-      icon: tabf1,
+      icon: tabf2,
       activeIcon: tabfAct2,
       label: "行情加速",
       value: "marketQuicken"
     }, {
-      icon: tabf1,
+      icon: tabf3,
       activeIcon: tabfAct3,
       label: "回报加速",
       value: "returnQuicken"
     }, {
-      icon: tabf1,
+      icon: tabf4,
       activeIcon: tabfAct4,
       label: "服务器",
       value: "server"
     }, {
-      icon: tabf1,
+      icon: tabf5,
       activeIcon: tabfAct5,
       label: "网络设备",
       value: "netEquip"
@@ -104,22 +108,22 @@ export const solutionData = [{
       label: "交易柜台",
       value: "dealDesks"
     }, {
-      icon: tabf1,
+      icon: tabf2,
       activeIcon: tabfAct2,
       label: "行情加速",
       value: "marketQuicken"
     }, {
-      icon: tabf1,
+      icon: tabf3,
       activeIcon: tabfAct3,
       label: "回报加速",
       value: "returnQuicken"
     }, {
-      icon: tabf1,
+      icon: tabf4,
       activeIcon: tabfAct4,
       label: "服务器",
       value: "server"
     }, {
-      icon: tabf1,
+      icon: tabf5,
       activeIcon: tabfAct5,
       label: "网络设备",
       value: "netEquip"
@@ -190,22 +194,22 @@ export const productDetailsData = {
     label: "交易柜台",
     value: "dealDesks"
   }, {
-    icon: tabf1,
+    icon: tabf2,
     activeIcon: tabfAct2,
     label: "行情加速",
     value: "marketQuicken"
   }, {
-    icon: tabf1,
+    icon: tabf3,
     activeIcon: tabfAct3,
     label: "回报加速",
     value: "returnQuicken"
   }, {
-    icon: tabf1,
+    icon: tabf4,
     activeIcon: tabfAct4,
     label: "服务器",
     value: "server"
   }, {
-    icon: tabf1,
+    icon: tabf5,
     activeIcon: tabfAct5,
     label: "网络设备",
     value: "netEquip"
