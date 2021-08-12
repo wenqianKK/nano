@@ -11,6 +11,8 @@ import {
   mapImgWrapper,
   imgMap
 } from '../styles/about.module.css';
+import map from "../images/map.png";
+
 const AboutPage = () => {
   return (
     <Layout pageTitle="About Me">
@@ -40,7 +42,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className={mapImgWrapper}>
-        <img src={""} alt="map" className={imgMap}/>
+        <img src={map} alt="map" className={imgMap}/>
       </div>
     </Layout>
   )

@@ -1,12 +1,12 @@
 .detail-wrapper {
-  padding: 30px 150px 0;
+  padding: 30px 150px ;
 }
 
 .detail-main {}
 
 .case-wrapper {
   display: flex;
-  height: 150px;
+  min-height: 150px;
 }
 
 .case-img-wrapper {
@@ -31,7 +31,7 @@
 
 .case-content span {
   font-size: 17px;
-  font-family: PingFangSC-Medium, PingFang SC;
+  font-family: PingFangSC-Medium;
   font-weight: 500;
   color: #FFFFFF;
   line-height: 25px;
@@ -54,14 +54,13 @@
   padding-top: 32px;
 }
 
-
 .content-side-title {
   font-size: 45px;
   font-family: PingFangSC-Semibold;
   font-weight: 600;
   color: #000000;
   line-height: 50px;
-
+  white-space: break-spaces;
 }
 
 .content-side-desc {
@@ -73,6 +72,17 @@
   line-height: 35px;
 }
 
+.content-side-img {
+  width: 750px;
+  height: 500px;
+  padding-top: 30px;
+}
+
+.content-side-img img {
+  width: 750px;
+  height: 500px;
+}
+
 .content-side-sub-title {
   font-size: 25px;
   font-family: PingFangSC-Semibold;
@@ -80,16 +90,19 @@
   color: #000000;
   line-height: 30px;
   padding-top: 40px;
-  padding-bottom: 20px;
+
 }
+
 .content-side-little-text {
   font-size: 17px;
   font-family: PingFangSC-Regular;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.85);
   line-height: 25px;
+  padding-top: 20px;
 }
-.content-side-sub-desc{
+
+.content-side-sub-desc {
   font-size: 17px;
   font-family: PingFangSC-Regular;
   font-weight: 400;
@@ -98,8 +111,9 @@
   position: relative;
   padding-left: 16px;
 }
-.content-side-sub-desc:before{
-  width:6px;
+
+.content-side-sub-desc:before {
+  width: 6px;
   height: 6px;
   border-radius: 50%;
   background: #000000;
@@ -110,9 +124,49 @@
   top: 9px;
 }
 
+.content-side-sub-descstr{
+  font-size: 17px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 25px;
+  position: relative;
+  white-space: break-spaces;
+}
+
 @media (max-width:768px) {
   .case-img {
     width: 40px;
     height: 40px;
+  }
+  .detail-wrapper {
+    padding: 12px 20px ;
+  }
+  .case-content{
+    padding: 12px;
+  }
+  .content-side-right{
+    padding-right: 10px;
+  }
+  .content-side-img {
+    width: 200px;
+    height: 80px;
+    padding-top: 30px;
+  }
+  
+  .content-side-img img {
+    width: 200px;
+    height: 80px;
+  }
+  .content-side-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .content-side-desc{
+    font-size: 20px;
+
+  }
+  .content-side-sub-title{
+    font-size: 20px;
   }
 }

@@ -15,6 +15,23 @@ import tabfAct2 from "../images/tabfAct2.png";
 import tabfAct3 from "../images/tabfAct3.png";
 import tabfAct4 from "../images/tabfAct4.png";
 import tabfAct5 from "../images/tabfAct5.png";
+import sikeNexus7000 from "../images/sikeNexus7000.png";
+import solarflareX252225GPlus from "../images/solarflareX252225GPlus.png";
+import exablazeExaNICX10 from "../images/exablazeExaNICX10.png";
+import finisar from "../images/finisar.png";
+import H3CLS1048 from "../images/H3CLS1048.png";
+
+
+export const languageTypeData = [{
+  label: "中文",
+  value: "cn"
+}, {
+  label: "英语",
+  value: "en"
+}, {
+  label: "日语",
+  value: "jp"
+}]
 
 export const solutionData = [{
     imgUrl: securitieImg,
@@ -27,10 +44,6 @@ export const solutionData = [{
       iconUrl: securitieAbility0,
       content: "纳秒级响应"
     }, {
-
-
-
-
       iconUrl: securitieAbility1,
       content: "稳定性升级"
     }, {
@@ -224,7 +237,7 @@ export const productDetailsData = {
       }
     },
     marketQuicken: {
-      topCaseImg: tabfAct1,
+      topCaseImg: tabfAct2,
       topCaseContent: "nano行情是基于FPGA的纳秒级行情加速系统，提供快速，精准的行情通道。为期货、证券、投资机构及专业人士的量化高频交易提供专属定制化的技术支撑产品。",
       sideTab: [{
         label: "上期所急速行情",
@@ -316,6 +329,189 @@ export const productDetailsData = {
             }, {
               littleText: "",
               subDesc: ["网络延时小，通常只经过L1", "只订阅本策略机需要的合约", "盘前和盘中随时更改订阅标的", "本地选优，A B 路可混合输出", "增量恢复全量直接送到CPU cache"]
+            }]
+          }]
+        },
+      }
+    },
+    returnQuicken: {
+      topCaseImg: tabfAct3,
+      topCaseContent: "nano回报加速是基于FPGA技术提供的纳秒级回报数据加速获取系统，协助期货、证券、投资机构及专业人士快速获取回报行情，提升交易效率。",
+      sideTab: [{
+        label: "上期所急速行情",
+        value: "shfe"
+      }, {
+        label: "大商所极速行情",
+        value: "dce"
+      }, {
+        label: "中金所极速行情",
+        value: "cicc"
+      }, {
+        label: "郑商所极速行情",
+        value: "zce"
+      }],
+      sideContent: {
+        zce: {
+          title: "郑商所极速行情",
+          desc: "NANO行情系统以FPGA硬件技术处理，来处理交易所行情。以快速稳定的效果为用户提供了纳秒级的低延时交易体验。同时保证高并发及优选的性能，为专业量化投资者提供了高成单率及良好竞争体现。",
+          otherDesc: [{
+            subTitle: "特点优势",
+            subContent: [{
+              littleText: "",
+              subDesc: ["基于FPGA技术设计，软硬件双层优化互备，极速体验；", "支持交易所全档行情；", "150纳秒穿透延迟，性能0抖动，100万秒消息吞吐量；", "多路优选机制，多通道并行组播发送；"]
+            }]
+          }]
+        },
+        dce: {
+          title: "大商所极速行情",
+          desc: "NANO行情系统以FPGA硬件技术处理，来处理交易所行情。以快速稳定的效果为用户提供了纳秒级的低延时交易体验。同时保证高并发及优选的性能，为专业量化投资者提供了高成单率及良好竞争体现。",
+          otherDesc: [{
+            subTitle: "特点优势",
+            subContent: [{
+              littleText: "",
+              subDesc: ["基于FPGA技术设计，软硬件双层优化互备，极速体验；", "支持交易所全档行情；", "150纳秒穿透延迟，性能0抖动，100万秒消息吞吐量；", "多路优选机制，多通道并行组播发送；", "随交易所进行优化升级"]
+            }]
+          }]
+        },
+        shfe: {
+          title: "上期所极速行情",
+          desc: "NANO行情系统以FPGA硬件技术处理，来处理交易所行情。以快速稳定的效果为用户提供了纳秒级的低延时交易体验。同时保证高并发及优选的性能，为专业量化投资者提供了高成单率及良好竞争体现。",
+          otherDesc: [{
+            subTitle: "特点优势",
+            subContent: [{
+              littleText: "",
+              subDesc: ["基于FPGA技术设计，软硬件双层优化互备，极速体验；", "支持交易所全档行情；", "150纳秒穿透延迟，性能0抖动，100万秒消息吞吐量；", "多路优选机制，多通道并行组播发送；", "随交易所进行优化升级"]
+            }]
+          }]
+        },
+        cicc: {
+          title: "中金所极速行情",
+          desc: "NANO行情系统以FPGA硬件技术处理，来处理交易所行情。以快速稳定的效果为用户提供了纳秒级的低延时交易体验。同时保证高并发及优选的性能，为专业量化投资者提供了高成单率及良好竞争体现。",
+          otherDesc: [{
+            subTitle: "特点优势",
+            subContent: [{
+              littleText: "",
+              subDesc: ["基于FPGA技术设计，软硬件双层优化互备，极速体验；", "支持交易所全档行情；", "150纳秒穿透延迟，性能0抖动，100万秒消息吞吐量；", "多路优选机制，多通道并行组播发送；", "随交易所进行优化升级"]
+            }]
+          }]
+        },
+      }
+    },
+    netEquip: {
+      topCaseImg: tabfAct5,
+      topCaseContent: "nano回报加速是基于FPGA技术提供的纳秒级回报数据加速获取系统，协助期货、证券、投资机构及专业人士快速获取回报行情，提升交易效率。",
+      sideTab: [{
+        label: "H3C\nLS-1048\n低延时交换机",
+        value: "h3c"
+      }, {
+        label: "思科 \nNexus 7000\n系列交换机",
+        value: "sike"
+      }, {
+        label: "exablaze\nExaNIC X10\n双口万兆低延迟网卡",
+        value: "exablaze"
+      }, {
+        label: "solarflare\nX2522-25G-Plus\n 双口万兆低延迟网卡",
+        value: "solarflare"
+      }, {
+        label: "Finisar/cisio \n原装万兆光模块",
+        value: "finisar"
+      }],
+      sideContent: {
+        h3c: {
+          title: "H3C LS-1048 低延时交换机",
+          imgUrl: H3CLS1048,
+          otherDesc: [{
+            subTitle: "特点优势",
+            subContent: [{
+              littleText: "",
+              subDesc: ["符合IEEE802.3、IEEE802.3u和IEEE802.3x标准", "提供48个10/100M自适应以太网端口；", "每个端口都支持Auto-MDI/MDIX功能；", "每个端口都提供Speed和Link/Act指示灯，显示端口的工作状态。"]
+            }]
+          }, {
+            subTitle: "特点优势",
+            subContent: [{
+              littleText: "",
+              subDesc: "属性  S1048\n外形尺寸（宽×深×高）440mm×230mm×44mm\n固定端口  48个10/100Mbps自适应以太网端口\n网线类型  10/100Base-TX：3/4/5类双绞线，支持最大传输距离100m\nMAC  8K\n缓存  2Mbits\n包转发率  7.14Mpps\n交换容量  9.6Gbps\n输入电压  100-240V AC\n功耗  最大24W\n工作环境温度  0℃～40℃ \n工作环境湿度  10%～85%\n存储温度  -10℃～70℃\n存储湿度  10%～90%\n散热方式  自然散热"
+            }]
+          }]
+        },
+        sike: {
+          title: "思科 Nexus 7000系列交换机",
+          imgUrl: sikeNexus7000,
+          otherDesc: [{
+            subTitle: "高性能",
+            subContent: [{
+              littleText: "",
+              subDesc: "思科 Nexus 7000 系列交换机在 Cisco NX-OS Software 上运行。该软件专为任务关键型企业和服务提供商部署而开发。这些交换机在具有高恢复能力的模块化平台中提供全面的功能集。"
+            }]
+          }, {
+            subTitle: "基础设施可扩展性",
+            subContent: [{
+              littleText: "",
+              subDesc: "通过虚拟化、节能和高效冷却、自动化云扩展、高密度和高性能，为实现高效的数据中心增长提供支持。"
+            }]
+          }, {
+            subTitle: "连续运行能力",
+            subContent: [{
+              littleText: "",
+              subDesc: "在设计上将硬件、NX-OS 软件功能和管理功能集成在一起，为建立零停机时间环境提供支持。"
+            }]
+          }, {
+            subTitle: "传输灵活性",
+            subContent: [{
+              littleText: "",
+              subDesc: "组织可以用具有成本效益的方式循序渐进地采用网络技术，包括思科远程集成式服务引擎 (RISE)、思科动态交换矩阵自动化 (DFA) 和 思科重叠传输虚拟化 (OTV)。 "
+            }]
+          }, {
+            subTitle: "利用开放 NX-OS 的可编程性",
+            subContent: [{
+              littleText: "",
+              subDesc: "7000 系列针对零日和 N 日配置与管理提供可编程自动化工具。标准开放式可编程 API 接口可用于调配控制平面和数据平面。有关资源，请访问 DevNet 社区。 "
+            }]
+          }]
+        },
+        exablaze: {
+          title: "exablaze ExaNIC X10 \n双口万兆低延迟网卡",
+          imgUrl: exablazeExaNICX10,
+          otherDesc: [{
+            subTitle: "参数",
+            subContent: [{
+              littleText: "",
+              subDesc: "适用网络类型:快速以太网\n传输速率:10000Mbps\n端口类型:其他\n型号:ExaNic X10"
+            }]
+          }, {
+            subTitle: "产品简介",
+            subContent: [{
+              littleText: "",
+              subDesc: "Exablaze的ExaNIC X10是一种超低延迟网络接口卡，可提供业界最低的延迟：对于小型以太网帧（使用本机API），780ns的应用程序到应用程序；对于小型TCP和UDP有效负载（使用透明套接字加速库），低于微秒。ExaNIC X10还具有内置桥接功能，可作为小型交换机使用，避免了某些常见使用情况下交换机的额外延迟。此外，基于硬件的每个数据包的时间戳分辨率为6纳秒，用户可以重新考虑其测量和延迟管理方法。\n该卡具有SMA连接器，可接受PPS输入或驱动PPS输出，以进一步提高整个系统时间戳的准确性。第二个端口可配置为镜像进入端口1的所有流量的副本，和/或所有离开端口1的流量（以及作为正常端口本身运行的流量）。此外，桥接模式允许数据包通过FPGA在两个端口之间快速传递（即，不涉及主机）"
+            }]
+          }]
+        },
+        solarflare: {
+          title: "solarflare X2522-25G-Plus\n双口万兆低延迟网卡",
+          imgUrl: solarflareX252225GPlus,
+          otherDesc: [{
+            subTitle: "产品简介",
+            subContent: [{
+              littleText: "",
+              subDesc: "PCIe3.0（8GT/s）：两倍的主机带宽，降低PCIe传送延迟\n双端口/四端口10G型号：更灵活的端口配置\n40G型号：更高的数据速率，减少中转延迟\n低时延比现有型号低20％：Solarflare的适配器提供市场领先的延迟，兼容全部TCP，UDP和POSIX。Flareon超级适配器配备高速时钟以实现最低的延迟。\n包复制加速：将报文送到服务器中多个用户的数据流。\n可编程I/O（PIO）模式：以比DMA模式更低的延迟传送小数据包到应用程序。\nH/W开关：灵活，加速数据路径以提高性能。\nH/W TSO：发送大量数据时提高了带宽和CPU效率。\nH/W时间戳：精密时间戳被插入到每个数据包，从而可监控，分析，解决问题，合规所有到服务器的网络流量。\nPTP时间同步：在网络中所有服务器上实现+/-200ns的高精度时间同步，监测，分析，解决问题，合规到服务器的所有网络流量是至关重要的。 Flareon超级适配器包括精密温补晶。\n振振荡器（Stratum 3标准）具有更高的更高的时钟稳定性。"
+            }]
+          }]
+        },
+        finisar: {
+          title: "sFinisar/cisio 原装万兆光模块",
+          otherDesc: [{
+            imgUrl: finisar,
+            subTitle: "Finisar FTLX8574D3BCL ",
+            subContent: [{
+              littleText: "",
+              subDesc: "万兆多模光模块  10G 850nm\n传输距离 400米"
+            }]
+          }, {
+            imgUrl: sikeNexus7000,
+            subTitle: "CISCO SFP-10G-LR",
+            subContent: [{
+              littleText: "",
+              subDesc: "万兆多模光模块  10G 850nm \n传输距离 400米"
             }]
           }]
         },

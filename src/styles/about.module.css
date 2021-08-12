@@ -59,6 +59,11 @@
   width: 50%;
 }
 
+.map-img-wrapper{
+  float: right;
+  width: 720px;
+  height: 750px;
+}
 .img-map{
   width: 100%;
 }

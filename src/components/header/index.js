@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby'
+import { Link } from 'gatsby';
 import {
   logo,
   navLinks,
@@ -8,26 +8,35 @@ import {
   navActive,
   imgLogo,
   navbarToggle,
-  srOnly,
   iconBar
-} from './index.module.css'
-// import { StaticImage } from 'gatsby-plugin-image'
-import logoImg from "../../images/logo.png"
+} from './index.module.css';
+import logoImg from "../../images/logo.png";
+import { languageTypeData }  from '../../constant';
+import { langData , getCookie }  from '../../constant/language';
 
-const Header = ({ pageTitle, children }) => {
+const Header = () => {
   const [navVisible, setNavVisible] = useState(false);
+ 
+
+  const setCookie = (name,value) => {
+    document.cookie = name + "="+ value ;
+  }
+
+  // const getCookie = (cookieName)=>{
+  //   let start = document.cookie.indexOf(cookieName+'=');
+  //   if (start == -1) return "";
+  //   start = start+cookieName.length+1;
+  //   let end = document.cookie.indexOf(';', start);
+  //   if (end == -1) end=document.cookie.length;
+  //   return document.cookie.substring(start, end);
+  // }
+  // console.log('getCookie["langtype"]',getCookie("langtype"))
+  // const lang = langData[ getCookie("langtype") || "en" ]
+
   return (
     <header className={header}>
       <div className={logo}>
-      <img src={logoImg} alt="Logo" className={imgLogo}/>
-        {/* <StaticImage
-          alt="nano express"
-          src="../../images/logo.png"
-        /> */}
-        {/* <StaticImage
-          alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-          src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
-        /> */}
+        <img src={logoImg} alt="Logo" className={imgLogo}/>
       </div>
       <button 
         type="button" 
@@ -47,6 +56,17 @@ const Header = ({ pageTitle, children }) => {
           <li><Link to="/about" activeClassName={navActive}>联系我们</Link></li>
         </ul>
       </nav>
+      <div>
+        {/* {
+          languageTypeData.length>0 && languageTypeData.map(item =>
+            <div onClick={()=>{
+              setCookie("langtype",item.value)
+              window.location.reload()
+            }} >{item.label}</div>
+          )
+        } */}
+        
+      </div>
     </header>
   )
 }
