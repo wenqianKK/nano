@@ -24,7 +24,7 @@ const SecuritiePage = () => {
       <Tab 
         dataSource = {data.financeTab} 
         active={active} 
-        onChange={(index)=>{setActive(index)}}
+        onChange={(active)=>{setActive(active)}}
       />
     </Layout>
   )
