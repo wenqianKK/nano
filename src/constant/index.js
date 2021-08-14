@@ -22,6 +22,7 @@ import tabfAct5 from "../images/tabfAct5.png";
 import sikeNexus7000 from "../images/sikeNexus7000.png";
 import solarflareX252225GPlus from "../images/solarflareX252225GPlus.png";
 import exablazeExaNICX10 from "../images/exablazeExaNICX10.png";
+import cisco from "../images/cisco.png";
 import finisar from "../images/finisar.png";
 import H3CLS1048 from "../images/H3CLS1048.png";
 import homeBanner0 from "../images/homeBanner0.png";
@@ -60,27 +61,45 @@ export const homeData = {
       imgUrl: homeBanner00,
       imgUrlHover: homeBanner0,
       subTitle: "物理层急速支撑",
-      subDesc: ["提供极速稳定的硬件产品 ", "服务器 交换机 网卡"],
+      subDesc: [{
+        text: "提供极速稳定的硬件产品 ",
+        goUrl: "/product/details?tab=netEquip"
+      }, {
+        text: "服务器 交换机 网卡",
+        goUrl: "/product/details?tab=netEquip"
+      }],
       more: "了解更多 >",
-      moreUrl: "",
+      moreUrl: "/product/details?tab=netEquip",
       className: "bannerImgItem0"
     }, {
       key: '1',
       imgUrl: homeBanner01,
       imgUrlHover: homeBanner1,
       subTitle: "急速处理引擎",
-      subDesc: ["FRGA定制化开发 极速柜台", "极速行情"],
-      more: "了解更多",
-      moreUrl: "",
+      subDesc: [{
+        text: "FRGA定制化开发 极速柜台",
+        goUrl: "/product/details?tab=dealDesks"
+      }, {
+        text: "极速行情",
+        goUrl: "/product/details?tab=marketQuicken"
+      }],
+      more: "了解更多 >",
+      moreUrl: "/product/details",
       className: "bannerImgItem1"
     }, {
       key: '2',
       imgUrl: homeBanner02,
       imgUrlHover: homeBanner2,
       subTitle: "极速响应全链路运维",
-      subDesc: ["极速运维服务 硬件服务 软件服务", "现场服务 远程服务"],
-      more: "了解更多",
-      moreUrl: "",
+      subDesc: [{
+        text: "极速运维服务 硬件服务 软件服务",
+        goUrl: "/product/details"
+      }, {
+        text: "现场服务 远程服务",
+        goUrl: "/product/details"
+      }],
+      more: "了解更多 >",
+      moreUrl: "/product/details",
       className: "bannerImgItem2"
 
     }]
@@ -95,16 +114,16 @@ export const homeData = {
 }
 
 export const footerData = {
-  contentData:[{
-    title:"解决方案",
-    text:"期货/证券公司\n个人/金融机构\nFPGA定制服务"
-  },{
-    title:"产品方案",
-    text:"行情加速\n高频交易柜台\n回报加速\n服务器\n网络设备"
+  contentData: [{
+    title: "解决方案",
+    text: "期货/证券公司\n个人/金融机构\nFPGA定制服务"
+  }, {
+    title: "产品方案",
+    text: "行情加速\n高频交易柜台\n回报加速\n服务器\n网络设备"
   }],
-  erweimaImg:erweima,
-  footerIcon:[footerIcon1,footerIcon2,footerIcon3],
-  footerText:"Copyright © 2019 NANOEXPRESS 版权所有 |  粤ICP备17016401号 | "
+  erweimaImg: erweima,
+  footerIcon: [footerIcon1, footerIcon2, footerIcon3],
+  footerText: "Copyright © 2019 NANOEXPRESS 版权所有 |  粤ICP备17016401号 | "
 }
 
 export const solutionData = [{
@@ -572,7 +591,7 @@ export const productDetailsData = {
           }]
         },
         finisar: {
-          title: "sFinisar/cisio 原装万兆光模块",
+          title: "Finisar/cisio 原装万兆光模块",
           otherDesc: [{
             imgUrl: finisar,
             subTitle: "Finisar FTLX8574D3BCL ",
@@ -581,7 +600,7 @@ export const productDetailsData = {
               subDesc: "万兆多模光模块  10G 850nm\n传输距离 400米"
             }]
           }, {
-            imgUrl: sikeNexus7000,
+            imgUrl: cisco,
             subTitle: "CISCO SFP-10G-LR",
             subContent: [{
               littleText: "",

@@ -19,6 +19,7 @@ import {
 } from './index.module.css'
 import TextTab from '../../components/text-tab'
 
+
 const ProductDetail = ({detailData = {sideTab:[{}]}}) => {
   const [active, setActive] = useState(detailData.sideTab[0]["value"]);
   const { sideContent={} } = detailData
@@ -29,7 +30,7 @@ const ProductDetail = ({detailData = {sideTab:[{}]}}) => {
 
   const sideContentItem = sideContent[active] ? sideContent[active] :{}
   console.log('actisideContentItemve',sideContentItem)
-console.log('sideContent["otherDesc"]',sideContent["otherDesc"])
+  console.log('sideContent["otherDesc"]',sideContent["otherDesc"])
   useEffect(() => {
     setActive(detailData.sideTab[0]["value"])
   }, [detailData])

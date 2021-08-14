@@ -18,6 +18,7 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  flex-wrap: wrap
 }
 
 .banner-img-item {
@@ -47,6 +48,9 @@
   line-height: 1.5;
   text-align: center;
 }
+.banner-sub-desc a {
+  color: #FFFFFF;
+}
 
 .banner-more {
   margin-top: 16px;
@@ -56,6 +60,10 @@
   line-height: 1.5;
   text-align: center;
   cursor: pointer;
+}
+.banner-more a{
+  color: #00C58E;
+
 }
 
 .banner-sub-desc-wrap {
@@ -100,7 +108,7 @@
   font-weight: 600;
   color: #FFFFFF;
   line-height: 33px;
-  white-space: breack-space;
+  white-space: break-spaces;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,6 +129,7 @@
   justify-content:space-between;
   align-items: center;
   padding-top: 64px;
+  flex-wrap: wrap;
   
 }
 .cooper-img-item{
@@ -131,4 +140,28 @@
 .cooper-img{
   width: 170px;
   height: 70px;
+}
+
+/* 宽大于768，后续样式无效 ；即宽小于768 以下样式生效*/
+@media (max-width:768px) {
+  .banner-wrapper{
+    padding: 10px 30px 10px;
+  }
+  
+  .banner-img-item {
+    width: 100%;
+  }
+  .about-descC{
+    padding: 10px 30px;
+  }
+  .industry-title-i{
+    padding: 16px 34px;
+  }
+  .cooper-wrapper{
+    padding: 0 16px;
+  }
+  .cooper-wrapper {
+    justify-content: center;
+    
+  }
 }

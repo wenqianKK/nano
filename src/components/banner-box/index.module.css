@@ -92,7 +92,7 @@
 /* 宽大于768，后续样式无效 ；即宽小于768 以下样式生效*/
 @media (max-width:768px) {
   .modularWrapper {
-    padding: 0 20px;
+    padding: 0 20px 20px;
   }
   .modularItem{
     margin-left: 0;
