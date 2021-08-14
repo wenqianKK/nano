@@ -110,6 +110,7 @@
   line-height: 25px;
   position: relative;
   padding-left: 16px;
+  white-space: break-spaces;
 }
 
 .content-side-sub-desc:before {

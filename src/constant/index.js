@@ -47,7 +47,10 @@ import fpgaCooper3 from "../images/fpgaCooper3.png";
 import fpgaCooper4 from "../images/fpgaCooper4.png";
 import fpgaCooper5 from "../images/fpgaCooper5.png";
 import fpgaCooper6 from "../images/fpgaCooper6.png";
-
+import ACEtrade from "../images/ACEtrade.jpg";
+import HPEProLiantDL580Gen10 from "../images/HPEProLiantDL580Gen10.jpg";
+import H3CUniServerR5300G3 from "../images/H3CUniServerR5300G3.jpg";
+import FusionServerPro2288V5 from "../images/FusionServerPro2288V5.jpg";
 
 export const languageTypeData = [{
   label: "中文",
@@ -375,9 +378,10 @@ export const productDetailsData = {
           }, {
             subTitle: "两种实际部署",
             subContent: [{
-              littleText: "网络版行情服务器 ",
+              littleText: "网络版行情",
               subDesc: ["网络延时大", "行情膨胀推挤递延严重，网络超载", "订阅不灵活，全局订阅，券商配置", "全局选优, 无法实现逐个合约选优", "价格相对优惠"]
             }, {
+              littleText: "本地版行情",
               subDesc: ["网络延时小，通常只经过L1", "只订阅本策略机需要的合约", "盘前和盘中随时更改订阅标的", "本地选优，A B 路可混合输出", "增量恢复全量直接送到CPU cache"]
             }]
           }]
@@ -394,10 +398,10 @@ export const productDetailsData = {
           }, {
             subTitle: "两种实际部署",
             subContent: [{
-              littleText: "网络版行情服务器",
+              littleText: "网络版行情",
               subDesc: ["网络延时大", "行情膨胀推挤递延严重，网络超载", "订阅不灵活，全局订阅，券商配置", "全局选优, 无法实现逐个合约选优", "价格相对优惠"]
             }, {
-              littleText: "",
+              littleText: "本地版行情",
               subDesc: ["网络延时小，通常只经过L1", "只订阅本策略机需要的合约", "盘前和盘中随时更改订阅标的", "本地选优，A B 路可混合输出", "增量恢复全量直接送到CPU cache"]
             }]
           }]
@@ -412,12 +416,12 @@ export const productDetailsData = {
               subDesc: ["基于FPGA技术设计，软硬件双层优化互备，极速体验；", "支持交易所全档行情；", "150纳秒穿透延迟，性能0抖动，100万秒消息吞吐量；", "多路优选机制，多通道并行组播发送；", "随交易所进行优化升级"]
             }]
           }, {
-            subTitle: "网络版行情服务器",
+            subTitle: "两种实际部署",
             subContent: [{
-              littleText: "",
+              littleText: "网络版行情",
               subDesc: ["网络延时大", "行情膨胀推挤递延严重，网络超载", "订阅不灵活，全局订阅，券商配置", "全局选优, 无法实现逐个合约选优", "价格相对优惠"]
             }, {
-              littleText: "",
+              littleText: "本地版行情",
               subDesc: ["网络延时小，通常只经过L1", "只订阅本策略机需要的合约", "盘前和盘中随时更改订阅标的", "本地选优，A B 路可混合输出", "增量恢复全量直接送到CPU cache"]
             }]
           }]
@@ -434,10 +438,10 @@ export const productDetailsData = {
           }, {
             subTitle: "两种实际部署",
             subContent: [{
-              littleText: "网络版行情服务器",
+              littleText: "网络版行情",
               subDesc: ["网络延时大", "行情膨胀推挤递延严重，网络超载", "订阅不灵活，全局订阅，券商配置", "全局选优, 无法实现逐个合约选优", "价格相对优惠"]
             }, {
-              littleText: "",
+              littleText: "本地版行情",
               subDesc: ["网络延时小，通常只经过L1", "只订阅本策略机需要的合约", "盘前和盘中随时更改订阅标的", "本地选优，A B 路可混合输出", "增量恢复全量直接送到CPU cache"]
             }]
           }]
@@ -629,12 +633,102 @@ export const productDetailsData = {
         },
       }
     },
-    // 服务器文案
     server:{
       //左侧tab文案
-      sideTab:"",
+      topCaseImg: tabfAct5,
+      topCaseContent: "nano回报加速是基于FPGA技术提供的纳秒级回报数据加速获取系统，协助期货、证券、投资机构及专业人士快速获取回报行情，提升交易效率。",
+      sideTab:[{
+        label: "ACEtrade\n高频交易服务器",
+        value: "aceTrade"
+      }, {
+        label: "HPE ProLiant \nDL580 Gen10服务器",
+        value: "hpeGen"
+      }, {
+        label: "H3C UniServer \nR5300 G3服务器",
+        value: "h3cG3"
+      },{
+        label: "FusionServer Pro \n2288 V5机架服务器",
+        value: "fusionV5"
+      }],
       //右侧tabContent文案
-      sideContent:{}
+      sideContent:{
+        aceTrade:{
+          title:"ACEtrade高频交易服务器",
+          desc:"为高频交易打造的一款专业的高频服务器。\n采用全新升级的散热系统，搭载优化后设计的机箱风道，使温度较高的机房也可以有效降低系统整体温度，增加系统散热冗余，增强系统稳定性。\n同时更加严苛的CPU挑选过程，更严格的整机测试机制，增加整体设备的系统性能和稳定性。\n优化后的BIOS和LINUX OS，带来更高的性能和耕地的整体延时抖动。",
+          imgUrl: ACEtrade,
+          otherDesc: [{
+            subTitle: "规格",
+            subContent: [{
+              littleText: "Finisar FTLX8574D3BCL",
+              subDesc: "处理器：Intel Core i9-10900fk，5.2G，10 Cores，20 M L3 Cache\n芯片组：Z490\n内存：Up to 128GB，Dual channel，3200Mhz\n存储：4 X SATA 2.5 HDD Support RAID 0/5/10\n网络：1 X IPM，2 X 1GB，2 X 10GB\n扩展系统：1 X PCIe Full height，1 X PCIe Half height\n电源系统：550W\n远程管理：IPMI 2.0 |电源管理|远程桌面|虚拟磁盘|健康管理"
+            },{
+              littleText: "ATX-218",
+              subDesc: "处理器：Intel Core i9-10980XE，5.0G，18 Cores，24.75 M L3 Cache\n芯片组：X299\n内存：Up to 256GB，Four channel，3200Mhz\n存储：4 X SATA 2.5 HDD Support RAID 0/5/10\n网络：1 X IPMI，1 X 1GB\n扩展系统：1 X PCIe Full height，3 X PCIe Half height\n电源系统：1300W\n远程管理：IPMI 2.0 |电源管理|远程桌面|虚拟磁盘|健康管理"
+            },{
+              littleText: "ATX-228",
+              subDesc: "处理器：Intel Xeon W-3175X，4.5G，28 Cores，38.5 M L3 Cache\n芯片组：C621\n内存：Up to 192GB，Six channel，3200Mhz\n存储：4 X SATA 2.5 HDD Support RAID 0/5/10\n网络：1 X IPMI，2 X 1GB\n扩展系统：6 X PCIe Half height\n电源系统：1300W\n远程管理：IPMI 2.0 |电源管理|远程桌面|虚拟磁盘|健康管理"
+            }]
+          }]
+
+        },
+        hpeGen:{
+          title:"HPE ProLiant DL580 Gen10服务器",
+          imgUrl: HPEProLiantDL580Gen10,
+          otherDesc: [{
+            subTitle: "介绍",
+            subContent: [{
+              littleText: "可扩展的4U服务器的可扩展性能",
+              subDesc: ["完全重新设计的HPE ProLiant DL580 Gen10服务器具有可扩展的4U外形，提供4P 计算，支持多达四个Intel®Xeon®铂金级和黄金级处理器。与上一代产品相比，该处理器的性能提高达28%1，内核增加达17%3。","多达48个DIMM插槽支持最多6TB的2666MT/s HPE DDR4 SmartMemory。HPE DDR4 SmartMemory在提高工作负载性能和电源效率的同时，通过增强的错误处理能力减少了数据丢失和停机时间。","HPE FlexibleLOM适配器有众多选择,可提供各种网络速度 (1GbE~25GbE) 和结构， 使您能够适应时刻变化和增长的业务需求。","智能系统调优 (Intelligent System Tuning) 带来的惠普企业创新，通过使用自定义配置文件进行内部资源优化，提升了工作负载性能，提高了所有工作负载 (包括延迟敏感型工作负载，例如通过对抖动进行平滑而实现的高频交易) 的吞吐量。"]
+            },{
+              littleText: "对多个工作负载具有显著的可扩展性和可用性",
+              subDesc: ["HPE ProLiant DL580 Gen10服务器有一个灵活的处理器托盘，使服务器可以根据需要从一个处理器扩展到四个，节省了前期成本；它还设计了一个灵活的驱动器托架， 支持多达48个小尺寸 (SFF) SAS/SATA驱动器和多达20个NVMe驱动器。","该服务器支持多达16个PCIe 3.0扩展插槽，包括多达4个全长/全高的图形处理单元(GPU) 以及可提供更高可扩展性的网络卡或存储控制器。","该服务器还支持多达4个能效为96%的HPE 800W或1600W灵活插槽电源，通过2+2 配置和灵活的电压范围，实现了更高的功率冗余。"]
+            },{
+              littleText: "安全可靠",
+              subDesc: ["HPE提供具有其自己设计的BMC (HPE iLO5) 硅片的行业标准服务器。该硅片进行了物理上的改变，以保护大部分服务器基本固件，包括HPE iLO、UEFI、IE、ME和SPLD。对HPE硅片的定位创造了真正具有保护意义的硅信任根 (可信硅根)。","在服务器操作系统启动和运行环境固件验证之前，HPE iLO Advanced Premium Security Edition使数百万行的固件代码开始运行，服务器固件每24小时检查一次， 验证基本系统固件的有效性和可信度。","安全恢复 (Secure Recovery) 允许服务器固件在检测到泄漏的代码后回滚到最后一次已知的良好状态或出厂设置。","可信平台模块 (TPM/TCM) 提供额外的安全选项，以防止未经授权访问服务器；并在移除服务器上盖时触发入侵检测包 (Intrusion Detection Kit) 登录并报警，确保存储在服务器的组件的安全。"]
+            },{
+              littleText: "加速IT服务交付的敏捷的基础设施管理",
+              subDesc: ["HPE ProLiant DL580 Gen10服务器与HPE OneView软件的结合，为跨服务器、存储和网络的自动操作简化管理提供基础设施。","服务器生命周期管理可使用一套嵌入式的、可下载的工具，包括统一可扩展固件接口 (UEFI)、智能资源调配 (Intelligent Provisioning)；用于监控和管理的HPE iLO 5； HPE iLO Amplifier Pack、Smart Update Manager (SUM) 和Service Pack for ProLiant (SPP)。"]
+            }]
+          }]
+        },
+        h3cG3:{
+          title:"H3C UniServer R5300 G3服务器",
+          imgUrl:H3CUniServerR5300G3,
+          otherDesc: [{
+            subTitle: "介绍",
+            subContent: [{
+              littleText: "前所未有的性能",
+              subDesc: ["H3C UniServer R5300 G3支持8块双宽GPU或20块单宽GPU，提供更强的计算能力。"," H3C UniServer R5300 G3针对CPU/GPU异构计算特点，采用PCIe4.0通信链路设计，可以实现GPU之间高速低延迟的数据通信，为用户带来卓越性能体验。","为主机配置了高速低延迟的网络适配器、NVMe驱动器并对最新的APE内存进行了适配，带来强大的性能。" ]
+            },{
+              littleText: "灵活支持深度学习和HPC工作负载",
+              subDesc: ["H3C UniServer R5300 G3服务器支持多种主流操作系统和虚拟化环境，包括 Microsoft®Windows®和 Linux操作系统，以及VMware和H3C CAS等环境，灵活适应多种业务需求。","支持现有数据中心基础设施标准，在现有基础上加速深度学习和HPC应用。"]
+            },{
+              littleText: "企业级可靠性、可用性、可维护性降低总体拥有成本",
+              subDesc: ["采用易于访问的模块化设计，更易于使用和升级","N+N的冗余电源与N+1热插拔冗余风扇保证系统安全稳定运行。优化的散热设计，降低系统功耗，节约运行成本。","服务器集成了管理监控芯片，提供了功能强大的集中管理软件，可以方便的实现对服务器的远程管理和状态监控，减少维护人员的工作量。"]
+            }]
+          },{
+            subTitle: "规格",
+            subContent: [{
+              littleText: "H3C UniServer R5300 G3",
+              subDesc: ["GPU计算模块：8GPU模块；20GPU模块","机箱高度：4U","芯片组：Intel®C621","处理器：支持2颗英特尔®至强®可扩展处理器：Skylake系列或者Cascade Lake系列CPU，最大支持功率205W","GPU支持：最多支持8张双宽GPU；最多支持20张单宽GPU","内存：支持24条 DDR4 RDIMM或LRDIMM；支持速率DDR4 2400/2666/2933MT/s","存储控制器：可选配高性能RAID控制器, 支持RAID0/1/10/5/6/50/60","PCIe插槽：4张单宽PCIe卡，1张OCP3.0卡和1张板载RAID卡；4张单宽PCIe卡，1张OCP3.0卡和1张板载RAID卡","前部硬盘扩展：（系统SAS/SATA/NVMe硬盘配置） 24x 3.5 SAS/SATA/NVMe（16LFF+8NVME或20LFF+4NVM或24LFF）；12x 3.5 SAS/SATA/NVMe（8LFF+4NVME）","网络：通过OCP3.0扩展支持2×10GE光口或2×25GE光口","风扇：支持8个8056风扇，N+1热插拔冗余风扇","管理软件：HDM & FIST","Front I/O：2x USB2.0位于左挂耳，1x USB3.0 位于右挂耳","Rear I/O：2x USB3.0+1x VGA+1x serial+1xHDM管理网口位于后面板","挂耳：智能挂耳","电源：最多4个2000W白金电源，支持N+N冗余","工作温度：运行环境温度：5℃~35℃；存储环境温度：-40℃~70℃","工作湿度：工作环境相对湿度（非凝露）：8%～90%；存储环境相对湿度（非凝露）：5%～95%","外形/机箱深度：（4U标准机箱：）不含安全面板：174.8mm X 447.0mm X 807mm；含安全面板：174.8mm X 447.0mm X 829mm","重量：8GPU机型满配 （8GPU+24LFF） 65.13kg；16GPU机型满配（16GPU+24LFF） 57.16kg","保修：3年5×9，下一工作日响应"]
+            }]
+          }]
+        },
+        fusionV5:{
+          title:"FusionServer Pro 2288 V5机架服务器",
+          imgUrl:FusionServerPro2288V5,
+          desc:"2U2路机架服务器，配置灵活，可广泛适用于云计算虚拟化、数据库、大数据等负载。2288 V5可配置2路处理器、16条DDR4内存扩展插槽与8个PCIe扩展槽及最多16*3.5”或27*2.5”的本地存储资源。",
+          otherDesc: [{
+            subTitle: "规格",
+            subContent: [{
+              littleText: "Finisar FTLX8574D3BCL",
+              subDesc: ["形态：2U机架服务器","处理器：1/2个处理器，最高125W","内存：16个DDR4内存插槽，最高2933MT/s","本地存储：(支持的硬盘配置)\n可配置8个2.5英寸SAS/SATA/SSD硬盘\n可配置12/16个3.5英寸SAS/SATA硬盘\n可配置27个2.5英寸SAS/SATA/SSD硬盘\n支持的NVMeSSD卡：可配置4个NVMeSSD卡\n支持Flash存储：双M.2SSDs","RAID支持:可选配支持RAID0、1、10、1E、5、50、6、60等，支持Cache超级电容保护，提供RAID级别迁移、磁盘漫游、自诊断、Web远程设置等功能",
+              "网络:\n板载网卡：2个GE接口；\n灵活插卡：可选配2*GE或4*GE或2*10GE或1/2个56GFDRIB接口","PCIe扩展：最多8个PCIe3.0扩展槽位，包括1个RAID卡专用的PCIe扩展卡和1个灵活LOM插卡","风扇：4个热拔插风扇，支持N+1冗余","电源：可配置2个冗余热插拔电源，支持1+1冗余，可选规格如下：\n550WAC白金电源\n900WAC白金/钛金电源\n1500WAC白金电源","管理：\n华为iBMC芯片集成1个专用管理GE网口，提供全面的故障诊断、自动化运维、硬件安全加固等管理特性;\niBMC支持Redﬁsh、SNMP、IPMI2.0等标准接口；提供基于HTML5/VNCKVM的远程管理界面；支持免CD部署和Agentless特性简化管理复杂度；\n可选配华为eSight管理软件，提供无状态计算、OS批量部署、固件自动升级等高级管理特性，实现全Th命周期智能化、自动化管理",
+              "操作系统：支持MicrosoftWindowsSever、RedHatEnterpriseLinux、SUSELinuxEnterpriseServer、CentOS、CitrixXenServer、VmwareESXi等，详询http://support.huawei.com/onlinetoolsweb/ftca/index?serise=2Fu","安全特性：支持加电密码、管理员密码、TPM、安全面板等安全特性","工作温度：5ºC-40ºC（41°F-104°F）（符合ASHRAEA2和A3标准","产品认证：CCC","安装套件：支持L型滑道、可伸缩滑道、抱轨","尺寸(高x宽x深)：\n3.5英寸硬盘机箱尺寸：86.1mm×447mm×748mm；\n2.5英寸硬盘机箱尺寸：86.1mm×447mm×708mm"]
+            }]
+          }]
+        }
+      }
     }
   }
 }
