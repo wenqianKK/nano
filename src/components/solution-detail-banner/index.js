@@ -9,16 +9,9 @@ import {
   bannerLeftAbility,
   bannerLeftAbilityItem
 } from './index.module.css'
-// {
-//   icon: securitieImg,
-//   name: "期货/证券公司",
-//   desc: ["全链路加速", "快速稳定", "极速响应活动"],
-//   moreUrl:"/solution/securitie",
-//   type:"securitie",
-//   banerDesc:"期货公司、证券公司存在多元化交易需求。尤其面向高频交易客户需要更稳定、更快速的产品支撑客户实现交易。"
-// },
+
 const SolutionDetailBanner = ({bannerData}) => {
-  console.log('bannerData',bannerData)
+  // console.log('bannerData',bannerData)
   return (
     <div className={bannerWrapper}> 
       <div className={bannerContainer}>
@@ -50,5 +43,4 @@ const SolutionDetailBanner = ({bannerData}) => {
     </div>
   )
 }
-
 export default SolutionDetailBanner

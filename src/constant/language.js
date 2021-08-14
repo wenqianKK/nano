@@ -1,6 +1,6 @@
 export function getCookie (cookieName) {
-  console.log("name",cookieName)
-  console.log("document.cookie",document.cookie)
+  // console.log("name",cookieName)
+  // console.log("document.cookie",document.cookie)
   // const start = document.cookie.indexOf(cookieName+'=');
   // if (start == -1) return "";
   // start = start+cookieName.length+1;

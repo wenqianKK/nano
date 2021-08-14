@@ -41,6 +41,13 @@ import erweima from "../images/erweima.png";
 import footerIcon1 from "../images/footerIcon1.png";
 import footerIcon2 from "../images/footerIcon2.png";
 import footerIcon3 from "../images/footerIcon3.png";
+import fpgaCooper1 from "../images/fpgaCooper1.png";
+import fpgaCooper2 from "../images/fpgaCooper2.png";
+import fpgaCooper3 from "../images/fpgaCooper3.png";
+import fpgaCooper4 from "../images/fpgaCooper4.png";
+import fpgaCooper5 from "../images/fpgaCooper5.png";
+import fpgaCooper6 from "../images/fpgaCooper6.png";
+
 
 export const languageTypeData = [{
   label: "中文",
@@ -53,6 +60,7 @@ export const languageTypeData = [{
   value: "jp"
 }]
 
+//首页文案数据
 export const homeData = {
   bannerData: {
     title: "为快而生 稳定 极速 定制",
@@ -113,6 +121,7 @@ export const homeData = {
   cooperationData: [parter0, parter1, parter2, parter3, parter4, parter5]
 }
 
+//footer文案数据
 export const footerData = {
   contentData: [{
     title: "解决方案",
@@ -125,7 +134,7 @@ export const footerData = {
   footerIcon: [footerIcon1, footerIcon2, footerIcon3],
   footerText: "Copyright © 2019 NANOEXPRESS 版权所有 |  粤ICP备17016401号 | "
 }
-
+//解决方案文案数据，解决方案详情文案数据，
 export const solutionData = [{
     imgUrl: securitieImg,
     name: "期货/证券公司",
@@ -233,10 +242,14 @@ export const solutionData = [{
       content: "竞争收益提升"
     }],
     descTitle: "定制产品", //解决方案详情里的title
-    descContent: "NANO团队专注于技术研发工作，同时联合多所高校研发FPGA定制产品。目前已经在多个领域协助客户解决问题：\n通信领域。通信领域需要高速的通信协议处理方式，另一方面通信协议随时都在修改，不适合做成专门的芯片，所以能够灵活改变的功能的FPGA就成了首选 \n算法领域。FPGA对于复杂信号的处理性很强，可以处理多维信号。\n嵌入式领域。利用FPGA构建一个嵌入式的底层环境，然后在此之上编写一些嵌入式软件，事务性的操作更加繁杂一些，对FPGA的操作较少。"
+    descContent: "NANO团队专注于技术研发工作，同时联合多所高校研发FPGA定制产品。目前已经在多个领域协助客户解决问题：\n通信领域。通信领域需要高速的通信协议处理方式，另一方面通信协议随时都在修改，不适合做成专门的芯片，所以能够灵活改变的功能的FPGA就成了首选 \n算法领域。FPGA对于复杂信号的处理性很强，可以处理多维信号。\n嵌入式领域。利用FPGA构建一个嵌入式的底层环境，然后在此之上编写一些嵌入式软件，事务性的操作更加繁杂一些，对FPGA的操作较少。",
+    partTitle:"合作单位",
+    partContent:"国内顶级FPGA专家团队服务\n如果您有相关需求，请与我们联系。",
+    cooperData:[fpgaCooper1,fpgaCooper2,fpgaCooper3,fpgaCooper4,fpgaCooper5,fpgaCooper6]
   },
 ]
 
+//产品方案文案数据
 export const productData = {
   fpga: {
     title: "FPGA产品",
@@ -275,7 +288,7 @@ export const productData = {
     }]
   }
 }
-
+//产品方案详情文案数据
 export const productDetailsData = {
   tabData: [{
     icon: tabf1,

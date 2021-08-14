@@ -19,7 +19,6 @@ const getUrlParam = (name)=>{
 }
 
 const FinacePage = () => {
-  console.log("tab:",getUrlParam("tab"))
   const [active, setActive] = useState(getUrlParam("tab")?getUrlParam("tab"):"dealDesks");
   const {tabData,detailsData} = productDetailsData
   return (
