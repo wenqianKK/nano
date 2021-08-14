@@ -24,7 +24,22 @@ import solarflareX252225GPlus from "../images/solarflareX252225GPlus.png";
 import exablazeExaNICX10 from "../images/exablazeExaNICX10.png";
 import finisar from "../images/finisar.png";
 import H3CLS1048 from "../images/H3CLS1048.png";
-
+import homeBanner0 from "../images/homeBanner0.png";
+import homeBanner00 from "../images/homeBanner00.png";
+import homeBanner1 from "../images/homeBanner1.png";
+import homeBanner01 from "../images/homeBanner01.png";
+import homeBanner2 from "../images/homeBanner2.png";
+import homeBanner02 from "../images/homeBanner02.png";
+import parter0 from "../images/parter0.png";
+import parter1 from "../images/parter1.png";
+import parter2 from "../images/parter2.png";
+import parter3 from "../images/parter3.png";
+import parter4 from "../images/parter4.png";
+import parter5 from "../images/parter5.png";
+import erweima from "../images/erweima.png";
+import footerIcon1 from "../images/footerIcon1.png";
+import footerIcon2 from "../images/footerIcon2.png";
+import footerIcon3 from "../images/footerIcon3.png";
 
 export const languageTypeData = [{
   label: "中文",
@@ -36,6 +51,61 @@ export const languageTypeData = [{
   label: "日语",
   value: "jp"
 }]
+
+export const homeData = {
+  bannerData: {
+    title: "为快而生 稳定 极速 定制",
+    content: [{
+      key: '0',
+      imgUrl: homeBanner00,
+      imgUrlHover: homeBanner0,
+      subTitle: "物理层急速支撑",
+      subDesc: ["提供极速稳定的硬件产品 ", "服务器 交换机 网卡"],
+      more: "了解更多 >",
+      moreUrl: "",
+      className: "bannerImgItem0"
+    }, {
+      key: '1',
+      imgUrl: homeBanner01,
+      imgUrlHover: homeBanner1,
+      subTitle: "急速处理引擎",
+      subDesc: ["FRGA定制化开发 极速柜台", "极速行情"],
+      more: "了解更多",
+      moreUrl: "",
+      className: "bannerImgItem1"
+    }, {
+      key: '2',
+      imgUrl: homeBanner02,
+      imgUrlHover: homeBanner2,
+      subTitle: "极速响应全链路运维",
+      subDesc: ["极速运维服务 硬件服务 软件服务", "现场服务 远程服务"],
+      more: "了解更多",
+      moreUrl: "",
+      className: "bannerImgItem2"
+
+    }]
+  },
+  aboutTitle: "关于NANO",
+  aboutDesc: "自成立之初一直专注于异构计算平台的研发，设计打造高效异构加速平台，推动软硬件协同发展。主营业务为网络数据处理加速卡、光网络传输系列平台等产品的研发、生产、和销售，及为用户提供相关专业全系列技术服务。在期货金融领域有较为广泛的应用",
+  industryTitle1: "国内FPGA技术顶尖团队\n金融硬件产品国产化先驱者",
+  industryTitle2: "金融交易解决方案服务商\n全链路信息处理专家",
+  cooperationTitle: "合作伙伴",
+  cooperationDesc: "20+的全球合作伙伴 NANO给予您最好的服务",
+  cooperationData: [parter0, parter1, parter2, parter3, parter4, parter5]
+}
+
+export const footerData = {
+  contentData:[{
+    title:"解决方案",
+    text:"期货/证券公司\n个人/金融机构\nFPGA定制服务"
+  },{
+    title:"产品方案",
+    text:"行情加速\n高频交易柜台\n回报加速\n服务器\n网络设备"
+  }],
+  erweimaImg:erweima,
+  footerIcon:[footerIcon1,footerIcon2,footerIcon3],
+  footerText:"Copyright © 2019 NANOEXPRESS 版权所有 |  粤ICP备17016401号 | "
+}
 
 export const solutionData = [{
     imgUrl: securitieImg,

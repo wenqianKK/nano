@@ -1,0 +1,103 @@
+.footer-Wrapper {
+  padding: 50px 200px 22px;
+  background-color: #000000;
+}
+
+.footer-top {
+  overflow: hidden;
+}
+
+.footer-topl {
+  float: left;
+  overflow: hidden;
+
+}
+
+.footer-logo {
+  padding-left: 108px;
+  float: left;
+  padding-top: 40px;
+}
+
+.footer-img-logo {
+  width: 140px;
+  height: 50px;
+}
+
+.footer-content {
+  float: left;
+  overflow: hidden;
+}
+
+.footer-content-item {
+  padding-left: 132px;
+  float: left;
+}
+
+.footer-content-title {
+  font-size: 17px;
+  font-family: PingFangSC-Medium, ;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 25px;
+  white-space: break-spaces;
+}
+
+.footer-content-text {
+  font-size: 15px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 20px;
+  white-space: break-spaces;
+  padding-top: 14px;
+
+}
+
+.footer-topr {
+  float: right;
+}
+
+.footer-erwei,
+.footer-erwei-img {
+  width: 120px;
+  height: 120px;
+}
+
+.footerBot {
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+.footerBotl {
+  float: left;
+  font-size: 17px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 25px;
+  white-space: break-spaces;
+
+}
+.footerBotr{
+  float:right;
+}
+.footerBotrIcon{
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+}
+
+/* footerBot,
+  footerBotl,
+  footerBotr,
+  footerBotrIcon */
+/* 宽小于768，后续样式无效 */
+@media (min-width:768px) {
+  .navbar-toggle {
+    display: none
+  }
+}
+
+/* 宽大于768，后续样式无效 ；即宽小于768 以下样式生效*/
+@media (max-width:768px) {}

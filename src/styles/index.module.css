@@ -1,0 +1,134 @@
+.banner-wrapper {
+  background: #000000;
+  padding: 0 130px 90px;
+}
+
+.banner-title {
+  font-size: 45px;
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 63px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.baner-img-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner-img-item {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 360px;
+  height: 360px;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+.banner-subtitle {
+  font-size: 20px;
+  font-family: PingFangSC-Semibold;
+  line-height: 1.5;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.banner-sub-desc {
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  color: #FFFFFF;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.banner-more {
+  margin-top: 16px;
+  font-size: 15px;
+  font-family: Lato-Heavy;
+  color: #00C58E;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+}
+
+.banner-sub-desc-wrap {
+  margin-top: 16px;
+}
+
+.about-wrapper {
+  padding: 60px 0;
+
+}
+
+.about-titleC {
+  font-size: 45px;
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+  color: #000000;
+  line-height: 50px;
+  text-align: center;
+}
+
+.about-descC {
+  font-size: 14px;
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+  color: #000000;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0 470px;
+  padding-top: 30px;
+}
+
+.industry-title-wrapper {
+  display: flex;
+}
+
+.industry-title-i {
+  flex: 1;
+  text-align: center;
+  font-size: 24px;
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 33px;
+  white-space: breack-space;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 110px 216px;
+}
+
+.industry-title-i:first-of-type {
+  background-color: #00AD82;
+}
+
+.industry-title-i:nth-of-type(2) {
+  background-color: #000000
+}
+
+.cooper-wrapper {
+  padding: 0 160px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding-top: 64px;
+  
+}
+.cooper-img-item{
+  width: 170px;
+  height: 70px;
+  border: 1px #000000 dashed;
+}
+.cooper-img{
+  width: 170px;
+  height: 70px;
+}

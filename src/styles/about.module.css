@@ -1,3 +1,6 @@
+.about-wrapper{
+  overflow: hidden;
+}
 .contain-left {
   float: left;
   width: 50%;
@@ -67,6 +70,7 @@
 .img-map{
   width: 100%;
 }
+
 /* 宽大于768，后续样式无效 ；即宽小于768 以下样式生效*/
 @media (max-width:768px) {
   .contain-left{

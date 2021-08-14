@@ -1,13 +1,16 @@
 import * as React from 'react'
 import Header from '../header/index'
+import Footer from '../footer/index'
+const Layout = (props) => {
 
-const Layout = ({children }) => {
+  const isHome = props.isHome ? props.isHome : false
   return (
     <div>
-      <Header />
+      <Header isHome={isHome}/>
       <main>
-        {children}
+        {props.children}
       </main>
+      <Footer/>
     </div>
   )
 }

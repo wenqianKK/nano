@@ -17,7 +17,6 @@ const ProductPage = () => {
        imgWidth= "56px"
        imgHeight = "56px"
       />
-      <div style={{height:"70px"}}></div>
       <BannerBox 
        {
          ...productData.allLink

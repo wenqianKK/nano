@@ -8,13 +8,15 @@ import {
   navActive,
   imgLogo,
   navbarToggle,
-  iconBar
+  iconBar,
+  isHomeStyle
 } from './index.module.css';
 import logoImg from "../../images/logo.png";
+import logo2 from "../../images/logo2.jpg";
 import { languageTypeData }  from '../../constant';
 import { langData , getCookie }  from '../../constant/language';
 
-const Header = () => {
+const Header = (props) => {
   const [navVisible, setNavVisible] = useState(false);
  
 
@@ -34,9 +36,9 @@ const Header = () => {
   // const lang = langData[ getCookie("langtype") || "en" ]
 
   return (
-    <header className={header}>
+    <header className={header} style={props.isHome?{background:"#000000"}:{}}>
       <div className={logo}>
-        <img src={logoImg} alt="Logo" className={imgLogo}/>
+        <img src={props.isHome?logo2:logoImg} alt="Logo" className={imgLogo}/>
       </div>
       <button 
         type="button" 
@@ -51,9 +53,9 @@ const Header = () => {
       <nav className={nav} style={navVisible ? {display:"flex"}:{}}>
         <ul className={navLinks}>
           <li><Link to="/" activeClassName={navActive}>首页</Link></li>
-          <li><Link to="/solution" activeClassName={navActive}>解决方案</Link></li>
-          <li><Link to="/product"activeClassName={navActive}>产品方案</Link></li>
-          <li><Link to="/about" activeClassName={navActive}>联系我们</Link></li>
+          <li><Link to="/solution" activeClassName={navActive} className={props.isHome?isHomeStyle:""}>解决方案</Link></li>
+          <li><Link to="/product"activeClassName={navActive} className={props.isHome?isHomeStyle:""}>产品方案</Link></li>
+          <li><Link to="/about" activeClassName={navActive} className={props.isHome?isHomeStyle:""}>联系我们</Link></li>
         </ul>
       </nav>
       <div>

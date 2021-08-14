@@ -5,6 +5,8 @@
   position: relative;
   box-sizing: border-box;
   width: 100%;
+  color: #000000;
+
 }
 
 .logo {
@@ -37,7 +39,6 @@
   font-size: 17px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
-  color: #000000;
   line-height: 70px;
 }
 
@@ -78,6 +79,10 @@
 
 .navbar-toggle .icon-bar+.icon-bar {
   margin-top: 4px
+}
+.is-home-style{
+  color: #ffffff;
+  background: #000000;
 }
 
 /* 宽小于768，后续样式无效 */

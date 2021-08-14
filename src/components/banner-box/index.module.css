@@ -28,7 +28,7 @@
 }
 
 .modularWrapper {
-  padding: 0 150px;
+  padding: 0 150px 70px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
