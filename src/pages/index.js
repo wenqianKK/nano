@@ -45,6 +45,7 @@ const IndexPage = () => {
         </div>
         <div className= {banerImgWrapper} >
         {content?.map((item) => (
+          
           <div 
             className={bannerImgItem}
             style={{
@@ -57,6 +58,12 @@ const IndexPage = () => {
             onMouseOver={() => setActiveBanner(item?.key)}
             onMouseLeave={() => setActiveBanner('')}
           >
+            {/* //先缓存一下图片 */}
+            <div style={{
+              backgroundImage: `url(${ item?.imgUrl})`,
+              opacity:0,
+              position:"absolute"
+            }}></div>
             <div className={bannerSubtitle}>
               {item.subTitle}
             </div>

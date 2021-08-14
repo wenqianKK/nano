@@ -317,13 +317,16 @@ export const productDetailsData = {
     value: "netEquip"
   }],
   detailsData: {
+    //交易柜台文案
     dealDesks: {
       topCaseImg: tabfAct1,
       topCaseContent: "基于FPGA技术的纳秒级相应的交易系统，符合各大交易所及期货公司风控及检测要求。为期货公司、金融机构、交易团队提供高性能，极速处理的交易柜台产品。",
+      //左侧tab文案
       sideTab: [{
         label: "高频交易柜台",
         value: "highFrequency"
       }],
+      //右侧tabContent文案
       sideContent: {
         highFrequency: {
           title: "高频交易柜台",
@@ -342,6 +345,7 @@ export const productDetailsData = {
         }
       }
     },
+    //行情加速文案
     marketQuicken: {
       topCaseImg: tabfAct2,
       topCaseContent: "nano行情是基于FPGA的纳秒级行情加速系统，提供快速，精准的行情通道。为期货、证券、投资机构及专业人士的量化高频交易提供专属定制化的技术支撑产品。",
@@ -440,6 +444,7 @@ export const productDetailsData = {
         },
       }
     },
+    //回报加速文案
     returnQuicken: {
       topCaseImg: tabfAct3,
       topCaseContent: "nano回报加速是基于FPGA技术提供的纳秒级回报数据加速获取系统，协助期货、证券、投资机构及专业人士快速获取回报行情，提升交易效率。",
@@ -503,6 +508,7 @@ export const productDetailsData = {
         },
       }
     },
+    //网络设备文案
     netEquip: {
       topCaseImg: tabfAct5,
       topCaseContent: "nano回报加速是基于FPGA技术提供的纳秒级回报数据加速获取系统，协助期货、证券、投资机构及专业人士快速获取回报行情，提升交易效率。",
@@ -622,6 +628,13 @@ export const productDetailsData = {
           }]
         },
       }
+    },
+    // 服务器文案
+    server:{
+      //左侧tab文案
+      sideTab:"",
+      //右侧tabContent文案
+      sideContent:{}
     }
   }
 }
