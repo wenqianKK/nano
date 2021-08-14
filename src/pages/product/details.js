@@ -6,10 +6,10 @@ import Tab from '../../components/tab';
 import ProductDetail from '../../components/product-detail'
 import { productDetailsData } from '../../constant';
 
-const getUrlParam = (name)=>{
+const getUrlParam = (location,name)=>{
   var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
   //匹配目标参数
-  var r = window.location.search.substr(1).match(reg);
+  var r = location.search.substr(1).match(reg);
   //返回参数
   if (r != null) {
       return unescape(r[2]);
@@ -18,8 +18,10 @@ const getUrlParam = (name)=>{
   }
 }
 
-const FinacePage = () => {
-  const [active, setActive] = useState(getUrlParam("tab")?getUrlParam("tab"):"dealDesks");
+const FinacePage = (props) => {
+  console.log("props",props)
+  const tab = getUrlParam(props.location,"tab")
+  const [active, setActive] = useState(tab ? tab :"dealDesks");
   const {tabData,detailsData} = productDetailsData
   return (
     <Layout>
