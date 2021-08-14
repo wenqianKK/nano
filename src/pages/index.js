@@ -17,7 +17,8 @@ import {
   industryTitleI,
   cooperWrapper,
   cooperImg,
-  cooperImgItem
+  cooperImgItem,
+  bannerImgItemPicture
 } from '../styles/index.module.css';
 import { homeData } from '../constant'
 
@@ -48,22 +49,22 @@ const IndexPage = () => {
           
           <div 
             className={bannerImgItem}
-            style={{
-              backgroundImage: `url(${
-                item?.key === activeBanner ? 
-                  item?.imgUrlHover : 
-                    item?.imgUrl
-              })`,
-            }}
+            // style={{
+            //   backgroundImage: `url(${
+            //     item?.key === activeBanner ? 
+            //       item?.imgUrlHover : 
+            //         item?.imgUrl
+            //   })`,
+            // }}
             onMouseOver={() => setActiveBanner(item?.key)}
             onMouseLeave={() => setActiveBanner('')}
           >
-            {/* //先缓存一下图片 */}
-            <div style={{
-              backgroundImage: `url(${ item?.imgUrl})`,
-              opacity:0,
-              position:"absolute"
-            }}></div>
+           <img 
+           src={item?.key === activeBanner ? 
+                  item?.imgUrlHover : 
+                    item?.imgUrl}
+            className={bannerImgItemPicture}
+            />
             <div className={bannerSubtitle}>
               {item.subTitle}
             </div>

@@ -31,14 +31,22 @@
   height: 360px;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
+  position: relative;
 }
-
+.banner-img-item-picture{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+}
 .banner-subtitle {
   font-size: 20px;
   font-family: PingFangSC-Semibold;
   line-height: 1.5;
   color: #FFFFFF;
   text-align: center;
+  z-index: 2;
 }
 
 .banner-sub-desc {
@@ -47,6 +55,8 @@
   color: #FFFFFF;
   line-height: 1.5;
   text-align: center;
+  z-index: 2;
+
 }
 .banner-sub-desc a {
   color: #FFFFFF;
@@ -60,6 +70,8 @@
   line-height: 1.5;
   text-align: center;
   cursor: pointer;
+  z-index: 2;
+
 }
 .banner-more a{
   color: #00C58E;
@@ -68,6 +80,8 @@
 
 .banner-sub-desc-wrap {
   margin-top: 16px;
+  z-index: 2;
+  
 }
 
 .about-wrapper {
