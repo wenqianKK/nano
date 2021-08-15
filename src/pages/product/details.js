@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import Layout from '../../components/layout';
 import {
 } from '../../styles/solution-detail.module.css';
@@ -18,11 +18,16 @@ const getUrlParam = (location,name)=>{
   }
 }
 
-const FinacePage = (props) => {
-  console.log("props",props)
-  const tab = getUrlParam(props.location,"tab")
+const FinacePage = ({location}) => {
+
+  const tab = getUrlParam(location,"tab")
   const [active, setActive] = useState(tab ? tab :"dealDesks");
-  const {tabData,detailsData} = productDetailsData
+  const {tabData,detailsData} = productDetailsData;
+
+  useEffect(() => {
+    const tab1 = getUrlParam(location,"tab")
+    setActive(tab1 ? tab1 :"dealDesks")
+  }, [location])
   return (
     <Layout>
       <Tab 

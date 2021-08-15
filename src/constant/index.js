@@ -104,7 +104,7 @@ export const homeData = {
       subTitle: "极速响应全链路运维",
       subDesc: [{
         text: "极速运维服务 硬件服务 软件服务",
-        goUrl: "/product/details"
+        goUrl: "/product/details?tab=server"
       }, {
         text: "现场服务 远程服务",
         goUrl: "/product/details"
