@@ -121,7 +121,7 @@ export const homeData = {
   industryTitle2: "金融交易解决方案服务商\n全链路信息处理专家",
   cooperationTitle: "合作伙伴",
   cooperationDesc: "20+的全球合作伙伴 NANO给予您最好的服务",
-  cooperationData: [parter0, parter1, parter2, parter3, parter4, parter5]
+  cooperationData: [parter0, parter1, parter2, parter3, parter4]
 }
 
 //footer文案数据
