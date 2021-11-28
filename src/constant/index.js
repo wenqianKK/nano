@@ -519,19 +519,24 @@ export const productDetailsData = {
       sideTab: [{
         label: "H3C\nLS-1048\n低延时交换机",
         value: "h3c"
-      }, {
-        label: "思科 \nNexus 7000\n系列交换机",
-        value: "sike"
-      }, {
-        label: "exablaze\nExaNIC X10\n双口万兆低延迟网卡",
-        value: "exablaze"
-      }, {
+      }, 
+      // {
+      //   label: "思科 \nNexus 7000\n系列交换机",
+      //   value: "sike"
+      // }, 
+      // {
+      //   label: "exablaze\nExaNIC X10\n双口万兆低延迟网卡",
+      //   value: "exablaze"
+      // }, 
+      {
         label: "solarflare\nX2522-25G-Plus\n 双口万兆低延迟网卡",
         value: "solarflare"
-      }, {
-        label: "Finisar/cisio \n原装万兆光模块",
-        value: "finisar"
-      }],
+      }, 
+      // {
+      //   label: "Finisar/cisio \n原装万兆光模块",
+      //   value: "finisar"
+      // }
+    ],
       sideContent: {
         h3c: {
           title: "H3C LS-1048 低延时交换机",
